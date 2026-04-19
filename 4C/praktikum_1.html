@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Pemoragraman Web Dasar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="shift">
+
+    <!-- SIDEBAR -->
+    <div id="sidebar" class="sidebar">
+        <button id="toggleBtn">☰</button>
+        <h2>Menu</h2>
+        <a href="#" id="sideHome">🏠 Home</a>
+        <a href="#" id="sideMateri">📘 Materi</a>
+        <a href="#" id="sideKontak">📞 Kontak</a>
+    </div>
+
+    <header>
+        <h1>🌸 PEMOGRAMAN WEB</h1>
+        <p>HTML, CSS, JS</p>
+    </header>
+
+    <nav>
+        <a href="#" id="navHome">Home</a>
+        <a href="#" id="navMateri">Materi</a>
+        <a href="#" id="navKontak">Kontak</a>
+    </nav>
+
+    <main>
+        <!-- HOME -->
+        <section id="homeSection">
+            <div class="card">
+                <p>Selamat datang di website saya.<p>
+
+                <p> Website ini adalah implementasi dari setiap materi html, css, dan js dari praktikum di lab</p>
+            </div>
+        </section>
+
+        <!-- MATERI -->
+        <section id="materiSection" style="display: none;">
+            <section class="card">
+                <h2>Demo JavaScript</h2>
+                <button id="btnPesan">Klik untuk menampilkan pesan</button>
+                <p id="hasil"></p>
+                <button onclick="alert('Halo! Ini contoh Inline JS')">Coba Inline JS</button>
+            </section>
+
+            <article class="card">
+                <h2>Artikel</h2>
+                <p>Ini contoh konten artikel mandiri.</p>
+            </article>
+
+            <aside class="card">
+                <h3>Tips Belajar Web</h3>
+                <ul>
+                    <li>Latihan coding setiap hari</li>
+                    <li>Pelajari dasar HTML & CSS dulu</li>
+                    <li>Coba buat project sederhana</li>
+                    <li>Gunakan tools seperti VS Code</li>
+                </ul>
+
+                <h3>Info Tambahan</h3>
+                <p>
+                    HTML digunakan untuk struktur, sedangkan CSS untuk tampilan.
+                    Keduanya sangat penting dalam pengembangan website modern.
+                </p>
+            </aside>
+
+            <section class="card">
+                <h2>Heading & Paragraf</h2>
+                <p>Ini adalah <b>teks tebal</b>, <i>miring</i>, dan <u>garis bawah</u>.</p>
+                <p id="teksWarna">Teks ini akan berubah warna 🎨</p>
+            </section>
+
+            <section class="card">
+                <h2>Atribut HTML</h2>
+                <p>
+                    Kunjungi
+                    <a href="https://www.afidarifin.com/5-fungsi-tag-html-yang-sering-digunakan/" target="_blank">
+                        tag html yang sering digunakan
+                    </a>
+                </p>
+                <img src="images.jpg" alt="Deskripsi Foto">
+            </section>
+
+            <section class="card profile">
+                <h2>Profil</h2>
+                <img src="gambar.jpg" alt="Foto Profil" class="profile-img">
+                <p>Halo! Ini adalah contoh foto yang ditampilkan di website.</p>
+            </section>
+
+            <section class="card">
+                <h2>Daftar</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+                <ol>
+                    <li>Belajar</li>
+                    <li>Latihan</li>
+                    <li>Praktik</li>
+                </ol>
+            </section>
+
+            <section class="card">
+                <h2>Tabel</h2>
+                <table>
+                    <tr>
+                        <th>No</th>
+                        <th>Mata Kuliah</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Pemrograman Web</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sistem Operasi</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="card">
+                <h2>Form Interaktif</h2>
+                <form id="formSaya">
+                    <input type="text" id="nama" placeholder="Nama" required>
+                    <input type="text" id="kelas" placeholder="Kelas" required>
+                    <input type="number" id="nim" placeholder="NIM" required>
+                    <input type="date" id="tanggal" required>
+
+                    <label for="warna">Pilih warna tema:</label>
+                    <input type="color" id="warna" value="#6366f1">
+
+                    <button type="submit">Kirim</button>
+                </form>
+            </section>
+        </section>
+
+        <!-- KONTAK -->
+        <section id="kontakSection" style="display: none;">
+            <div class="card">
+                <p>Email: dianaanisfardah17@email.com</p>
+                <p>Instagram: @dianaanisfa</p>
+                <p>No HP: 081937855981</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Praktikum Web 💻</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
