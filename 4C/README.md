@@ -1,7 +1,7 @@
-🌸 Web Dasar - Praktikum Pemrograman Web
+# 🌸 Web Dasar - Praktikum Pemrograman Web
 Project ini merupakan hasil praktikum Pemrograman Web Dasar yang berisi implementasi dasar dari HTML, CSS, dan JavaScript. Melalui project ini kita bisa memahami bagaimana cara membuat website, mengenal struktur dan tag HTML, mengetahui styling menggunakan CSS, dan interaksi menggunakan JavaScript.
 
-📌 Deskripsi
+# 📌 Deskripsi
 Website ini dibuat sebagai latihan untuk memahami:
     - Struktur halaman menggunakan HTML
     - Styling menggunakan CSS
@@ -11,7 +11,7 @@ Website memiliki beberapa halaman utama:
     2. Materi → Berisi berbagai demo dan contoh elemen web
     3. Kontak → Informasi kontak pembuat
 
-🚀 Fitur Utama
+# 🚀 Fitur Utama
 1. Navigasi Interaktif
 Navigasi menggunakan navbar dan sidebar. Perpindahan halaman dilakukan tanpa reload dengan JavaScript
 2. Sidebar Toggle
@@ -36,22 +36,22 @@ Navigasi menggunakan navbar dan sidebar. Perpindahan halaman dilakukan tanpa rel
     - Form
   Semua ditampilkan di halaman materi 
 
-🎨 Tampilan (CSS)
+# 🎨 Tampilan (CSS)
 Menggunakan background gradasi, layout berbasis card, grid responsif, sidebar modern, serta efek hover. Seluruh tampilan diatur dalam file CSS.
 
-🛠️ Teknologi yang Digunakan
+# 🛠️ Teknologi yang Digunakan
     - HTML5
     - CSS3
     - JavaScript 
 
-📂 Struktur Folder
+# 📂 Struktur Folder
 web_dasar/
 │── praktikum_1.html
 │── style.css
 │── script.js
 │── images.jpg
 
-▶️ Cara Menjalankan
+# ▶️ Cara Menjalankan
 1. Clone repository:
     ```bash
     git clone https://github.com/dianaanisfardah17-ship-it/web-dasar-diana.git
@@ -65,6 +65,16 @@ web_dasar/
     praktikum_1.html
     ```
 (di browser)
+
+# Dokumentasi Website
+![Teks Alternatif](DokumentasiWeb/home.png)
+![Teks Alternatif](DokumentasiWeb/materi1.png)
+![Teks Alternatif](DokumentasiWeb/materi2.png)
+![Teks Alternatif](DokumentasiWeb/inputform.png)
+![Teks Alternatif](DokumentasiWeb/berubahwarna.png)
+![Teks Alternatif](DokumentasiWeb/demojs.png)
+![Teks Alternatif](DokumentasiWeb/inlinejs.png)
+![Teks Alternatif](DokumentasiWeb/kontak.png)
 
 👤 Author
 Nama: Diana Anis Fardah
