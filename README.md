@@ -76,11 +76,11 @@ web_dasar/
 ![Teks Alternatif](DokumentasiWeb/inlinejs.png)
 ![Teks Alternatif](DokumentasiWeb/kontak.png)
 
-👤 Author
-Nama: Diana Anis Fardah
-Email: [dianaanisfardah17@email.com](mailto:dianaanisfardah17@email.com)
+# 👤 Author
+    - Nama: Diana Anis Fardah
+    - Email: [dianaanisfardah17@email.com](mailto:dianaanisfardah17@email.com)
 
-📌 Catatan
+# 📌 Catatan
 Project ini dibuat untuk keperluan pembelajaran dan praktikum, sehingga masih dapat dikembangkan lebih lanjut.
 
 ✨ Selamat belajar dan eksplorasi web development!
