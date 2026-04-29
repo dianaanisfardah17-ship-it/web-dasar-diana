@@ -1,3 +1,4 @@
+console.log("JS AKTIF");
 // ================= VARIABEL =================
 let isOpen = true;
 
@@ -25,10 +26,6 @@ const btnPesan = document.querySelector("#btnPesan");
 const hasil = document.querySelector("#hasil");
 
 // ================= FUNGSI =================
-function tampilkanPesan(nama) {
-    return "Halo, " + nama + "! Selamat belajar JavaScript 🚀";
-}
-
 function hideAllSections() {
     homeSection.style.display = "none";
     materiSection.style.display = "none";
@@ -46,55 +43,69 @@ function showSection(section) {
 }
 
 // ================= NAVIGASI =================
-navHome.addEventListener("click", function (e) {
-    e.preventDefault();
-    showSection(homeSection);
-});
+if (navHome) {
+    navHome.addEventListener("click", function (e) {
+        e.preventDefault();
+        showSection(homeSection);
+    });
+}
 
-navMateri.addEventListener("click", function (e) {
-    e.preventDefault();
-    showSection(materiSection);
-});
+if (navMateri) {
+    navMateri.addEventListener("click", function (e) {
+        e.preventDefault();
+        showSection(materiSection);
+    });
+}
 
-navKontak.addEventListener("click", function (e) {
-    e.preventDefault();
-    showSection(kontakSection);
-});
+if (navKontak) {
+    navKontak.addEventListener("click", function (e) {
+        e.preventDefault();
+        showSection(kontakSection);
+    });
+}
 
-sideHome.addEventListener("click", function (e) {
-    e.preventDefault();
-    showSection(homeSection);
-});
+if (sideHome) {
+    sideHome.addEventListener("click", function (e) {
+        e.preventDefault();
+        showSection(homeSection);
+    });
+}
 
-sideMateri.addEventListener("click", function (e) {
-    e.preventDefault();
-    showSection(materiSection);
-});
+if (sideMateri) {
+    sideMateri.addEventListener("click", function (e) {
+        e.preventDefault();
+        showSection(materiSection);
+    });
+}
 
-sideKontak.addEventListener("click", function (e) {
-    e.preventDefault();
-    showSection(kontakSection);
-});
+if (sideKontak) {
+    sideKontak.addEventListener("click", function (e) {
+        e.preventDefault();
+        showSection(kontakSection);
+    });
+}
 
 // ================= SIDEBAR =================
-toggleBtn.addEventListener("click", function () {
-    sidebar.classList.toggle("collapsed");
+if (toggleBtn && sidebar) {
+    toggleBtn.addEventListener("click", function () {
+        sidebar.classList.toggle("collapsed");
 
-    if (isOpen) {
-        document.body.classList.remove("shift");
-        document.body.classList.add("shift-collapsed");
-    } else {
-        document.body.classList.add("shift");
-        document.body.classList.remove("shift-collapsed");
-    }
+        if (isOpen) {
+            document.body.classList.remove("shift");
+            document.body.classList.add("shift-collapsed");
+        } else {
+            document.body.classList.add("shift");
+            document.body.classList.remove("shift-collapsed");
+        }
 
-    isOpen = !isOpen;
-});
+        isOpen = !isOpen;
+    });
+}
 
 // ================= EVENT CLICK =================
 if (btnPesan && hasil) {
     btnPesan.addEventListener("click", function () {
-        hasil.textContent = "Tombol berhasil diklik!";
+        hasil.textContent = "web ini adalah tugas praktikum pemograman web!";
         hasil.style.color = "blue";
     });
 }
@@ -102,36 +113,32 @@ if (btnPesan && hasil) {
 // ================= VALIDASI FORM =================
 if (formSaya) {
     formSaya.addEventListener("submit", function (e) {
-        e.preventDefault();
-
         let nama = inputNama.value;
 
         if (nama === "") {
+            e.preventDefault();
             alert("Nama tidak boleh kosong!");
         } else if (nama.length < 3) {
+            e.preventDefault();
             alert("Nama minimal 3 karakter!");
-        } else {
-            hasil.textContent = tampilkanPesan(nama);
-            hasil.style.color = "green";
         }
-    });
-}
-
-// ================= WARNA INTERAKTIF =================
-if (inputWarna && teksWarna) {
-    inputWarna.addEventListener("input", function () {
-        let warna = this.value;
-        teksWarna.style.color = warna;
-
-        document.querySelector("header").style.background =
-            "linear-gradient(90deg, " + warna + ", #ec4899)";
-    });
-
-    teksWarna.addEventListener("click", function () {
-        this.textContent = "Teks sudah diklik!";
     });
 }
 
 // ================= DEFAULT =================
 document.body.classList.add("shift");
 showSection(homeSection);
+
+// Gunakan event delegation agar lebih kuat
+document.addEventListener("input", function (e) {
+    // Memastikan yang digeser adalah input dengan ID 'warna'
+    if (e.target && e.target.id === "warna") {
+        const targetText = document.getElementById("teksWarna");
+        if (targetText) {
+            // Ubah warna secara langsung
+            targetText.style.color = e.target.value;
+            // Tambahan: tampilkan di console untuk memastikan JS jalan
+            console.log("Warna berhasil diubah ke: " + e.target.value);
+        }
+    }
+});

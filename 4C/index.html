@@ -6,7 +6,8 @@
     <title>Praktikum Pemoragraman Web Dasar</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
+    
 </head>
 <body class="shift">
 
@@ -21,7 +22,7 @@
 
     <header>
         <h1>🌸 PEMOGRAMAN WEB</h1>
-        <p>HTML, CSS, JS</p>
+        <p>HTML, CSS, JS, PHP</p>
     </header>
 
     <nav>
@@ -34,9 +35,9 @@
         <!-- HOME -->
         <section id="homeSection">
             <div class="card">
-                <p>Selamat datang di website saya.<p>
+                <p>Selamat datang di website saya.</p>
 
-                <p> Website ini adalah implementasi dari setiap materi html, css, dan js dari praktikum di lab</p>
+                <p> Website ini adalah implementasi dari setiap materi praktikum di lab</p>
             </div>
         </section>
 
@@ -46,7 +47,10 @@
                 <h2>Demo JavaScript</h2>
                 <button id="btnPesan">Klik untuk menampilkan pesan</button>
                 <p id="hasil"></p>
-                <button onclick="alert('Halo! Ini contoh Inline JS')">Coba Inline JS</button>
+            <button 
+            onclick="alert('Ini contoh penggunaan Inline JavaScript 🚀');">
+            Coba Inline JS
+            </button>
             </section>
 
             <article class="card">
@@ -86,19 +90,13 @@
                 </p>
                 <img src="images.jpg" alt="Deskripsi Foto">
             </section>
-
-            <section class="card profile">
-                <h2>Profil</h2>
-                <img src="gambar.jpg" alt="Foto Profil" class="profile-img">
-                <p>Halo! Ini adalah contoh foto yang ditampilkan di website.</p>
-            </section>
-
             <section class="card">
                 <h2>Daftar</h2>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
+                    <li>PHP</li>
                 </ul>
 
                 <ol>
@@ -121,26 +119,52 @@
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Sistem Operasi</td>
+                        <td>Analisis Desain Perangkat Lunak</td>
                     </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pemograman Mobile Native</td>
+                    </tr> 
+                    <tr>
+                        <td>4</td>
+                        <td>Jaringan Komputer</td>
+                    </tr> 
+                    <tr>
+                        <td>5</td>
+                        <td>Manajemen Basis Data</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Kompleksitas Algoritma</td>
+                    </tr>
+
                 </table>
             </section>
-
             <section class="card">
-                <h2>Form Interaktif</h2>
-                <form id="formSaya">
-                    <input type="text" id="nama" placeholder="Nama" required>
-                    <input type="text" id="kelas" placeholder="Kelas" required>
-                    <input type="number" id="nim" placeholder="NIM" required>
-                    <input type="date" id="tanggal" required>
+    <h2>Form Interaktif</h2>
 
-                    <label for="warna">Pilih warna tema:</label>
-                    <input type="color" id="warna" value="#6366f1">
+    <p id="hasilPesan" style="font-weight:bold; color:green;"></p>
 
-                    <button type="submit">Kirim</button>
-                </form>
-            </section>
+    <form id="formSaya" method="POST" action="proses.php">
+    <input type="text" id="nama" name="nama" placeholder="Nama" required>
+    <input type="text" id="kelas" name="kelas" placeholder="Kelas" required>
+    <input type="number" id="nim" name="nim" placeholder="NIM" required>
+    <input type="date" id="tanggal" name="tanggal" required>
+    <input type="number" id="nilai" name="nilai" placeholder="Nilai" min="0" max="100" required>
+    <input type="email" id="email" name="email" placeholder="Email">
+
+   <textarea 
+    name="matkul" 
+    placeholder="Masukkan mata kuliah">
+</textarea>
+
+    <label for="warna">Pilih warna tema</label>
+    <input type="color" id="warna" name="warna" value="#6366f1">
+
+    <button type="submit">Kirim</button>
+        </form>
         </section>
+        </section> 
 
         <!-- KONTAK -->
         <section id="kontakSection" style="display: none;">
