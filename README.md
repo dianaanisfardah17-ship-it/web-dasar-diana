@@ -255,6 +255,7 @@ H --> I[Tampilkan Semua Data User]
 project/
 │
 ├── index.html      # Halaman utama
+├── images.jpg     # elemen gambar
 ├── style.css       # Tampilan UI
 ├── script.js       # Interaksi & logic JS
 ├── koneksi.php     # Koneksi database
