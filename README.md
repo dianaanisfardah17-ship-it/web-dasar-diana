@@ -329,9 +329,6 @@ Project ini bukan hanya latihan tampilan, tetapi sudah:
 * Menghubungkan frontend dan backend
 * Memiliki struktur aplikasi web sederhana
 
-Bagian **Materi** berfungsi sebagai:
-➡️ Dokumentasi pembelajaran
-➡️ Demo fitur
-➡️ Implementasi langsung konsep web
+Bagian **Materi** berfungsi sebagai Dokumentasi pembelajaran, Demo fitur, Implementasi langsung konsep web
 
 ---
